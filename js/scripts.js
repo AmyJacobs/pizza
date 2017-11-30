@@ -7,6 +7,10 @@ function Pizza (toppings,size,style,color) {
   this.color = color;
 }
 
+Pizza.prototype.priceCalc = function() {
+  return this.size;
+}
+
 $(document).ready(function(){
   $("form#pizza_survey").submit(function(event){
     event.preventDefault();
@@ -20,6 +24,8 @@ $(document).ready(function(){
     });
     var newPizza = new Pizza(toppingsArray, sizeMode, pizzaStyle, pizzaColor);
     console.log(newPizza);
+    var price = newPizza.priceCalc();
+    $('#price-output').append(price + "<br>");
     $('#topp-output').append(newPizza.toppings + "<br>");
     $('#size-output').append(newPizza.size + "<br>");
     $('#style-output').append(newPizza.style + "<br>");
