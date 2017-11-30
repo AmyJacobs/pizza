@@ -8,7 +8,15 @@ function Pizza (toppings,size,style,color) {
 }
 
 Pizza.prototype.priceCalc = function() {
-  return this.size;
+  var price = 0;
+  if (this.style === "deep-dish") {
+    price = 25;
+  } else if (this.style === "new-york") {
+      price = 20;
+  } else if (this.style === "california") {
+      price = 30;
+  }
+  return price;
 }
 
 $(document).ready(function(){
@@ -24,8 +32,8 @@ $(document).ready(function(){
     });
     var newPizza = new Pizza(toppingsArray, sizeMode, pizzaStyle, pizzaColor);
     console.log(newPizza);
-    var price = newPizza.priceCalc();
-    $('#price-output').append(price + "<br>");
+    var priceResult = newPizza.priceCalc();
+    $('#price-output').append(priceResult + "<br>");
     $('#topp-output').append(newPizza.toppings + "<br>");
     $('#size-output').append(newPizza.size + "<br>");
     $('#style-output').append(newPizza.style + "<br>");
