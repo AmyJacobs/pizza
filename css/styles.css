@@ -1,3 +1,42 @@
+body {
+  background-color: #8eaeff;
+}
+
 #output {
   display: none;
+}
+#circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  margin:auto;
+}
+
+.form-box {
+  padding:40px;
+  background-color: white;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#output {
+  padding:30px;
+  width:300px;
+  margin:auto;
+  background-color: white;
+}
+
+h1 {
+  text-align:center;
+  font-family: 'Gochi Hand', cursive;
+  font-size:50px;
+}
+
+h2 {
+  text-align:center;
+  font-family: 'Gochi Hand', cursive;
+  font-size:34px;
 }

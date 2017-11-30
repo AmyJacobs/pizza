@@ -6,15 +6,15 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h2>Order your pizza!</h2>
-      </div>
+      <div class="form-box">
+      <h1>Order your pizza!</h1>
       <form id="pizza_survey">
         <div class="form-group">
-          <p>Select your toppings!</p>
+          <p><strong>Select your toppings!</strong></p>
           <input type="checkbox" name="toppings" value="cheese"> Cheese<br>
           <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
           <input type="checkbox" name="toppings" value="olives"> Olives<br>
@@ -22,7 +22,7 @@
           <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
           <input type="checkbox" name="toppings" value="bacon"> Canadian bacon<br>
         </div>
-        Select size of pizza:
+        <strong>Select size of pizza:</strong>
         <div class="radio">
           <label>
             <input type="radio" name="size" value="small" checked>
@@ -41,7 +41,7 @@
             Large
           </label>
         </div>
-        Select style of pizza:<br>
+        <strong>Select style of pizza:</strong><br>
         <div class="radio">
           <label>
             <input type="radio" name="style" value="deep-dish" checked>
@@ -66,14 +66,15 @@
         </div>
        <button type="submit">Submit Survey</button>
       </form>
-      <span id="output">
-        <p><h1>Your pizza:</h1></p>
+    </div>
+      <div id="output">
+        <p><h2>Your pizza:</h2></p>
         <p><b>Toppings:</b> <span id="topp-output"></span></p>
         <p><b>Size:</b> <span id="size-output"></span></p>
         <p><b>Style:</b> <span id="style-output"></span></p>
-        <p><b>Price:</b> <span id="price-output"></span></p>
-
-      </span>
+        <p><b>Price:</b> $<span id="price-output"></span></p>
+        <div id="circle"></div>
+      </div>
       <br>
     </div>
   </body>
