@@ -22,7 +22,48 @@
           <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
           <input type="checkbox" name="toppings" value="bacon"> Canadian bacon<br>
         </div>
-        
+        Select size of pizza:
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="small" checked>
+            Small
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="medium">
+            Medium
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="large">
+            Large
+          </label>
+        </div>
+        Select style of pizza:<br>
+        <div class="radio">
+          <label>
+            <input type="radio" name="style" value="deep-dish" checked>
+            Deep dish
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="style" value="new-york">
+            New York
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="style" value="california">
+            California pizza
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="color">Select color of pizza:</label>
+          <input id="color" class="form-control" type="color">
+        </div>
        <button type="submit">Submit Survey</button>
       </form>
       <span id="output">
