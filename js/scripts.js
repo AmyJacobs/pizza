@@ -1,3 +1,12 @@
+var toppingsArray = [];
+
+function Pizza (toppings,size,style,color) {
+  this.toppings = toppings;
+  this.size = size;
+  this.style = style;
+  this.color = color;
+}
+
 $(document).ready(function(){
   $("form#pizza_survey").submit(function(event){
     event.preventDefault();
@@ -9,8 +18,11 @@ $(document).ready(function(){
     $('#output').append(pizzaStyle + "<br>");
     $("input:checkbox[name=toppings]:checked").each(function(){
       var toppingsMode = $(this).val();
-      $('#output').append(toppingsMode + "<br>");
+      toppingsArray.push(toppingsMode);
     });
+    $('#output').append(toppingsArray + "<br>");
+    var newPizza = new Pizza(toppingsArray, sizeMode, pizzaStyle, pizzaColor);
+    console.log(newPizza);
     $("#output").show();
   });
 });
