@@ -5,14 +5,13 @@ body {
 #output {
   display: none;
 }
-#circle {
-	width: 100px;
-	height: 100px;
-	background: red;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+#pizza {
+  width:240px;
+  height:121px;
+  background: red;
+  background-image: url('transparentPizza.png');
   margin:auto;
+  background-size: 240px 121px;
 }
 
 .form-box {

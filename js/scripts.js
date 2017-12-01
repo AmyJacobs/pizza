@@ -52,7 +52,7 @@ $(document).ready(function(){
     $('#topp-output').append(newPizza.toppings + "<br>");
     $('#size-output').append(newPizza.size + "<br>");
     $('#style-output').append(newPizza.style + "<br>");
-    $("#circle").css("background-color", pizzaColor);
+    $("#pizza").css("background-color", pizzaColor);
     $("#output").show();
   });
 });
